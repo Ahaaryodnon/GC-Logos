@@ -1,0 +1,13 @@
+﻿//
+// Copyright (C) Microsoft Corporation.  All rights reserved.
+//
+
+// This file should be imported into the HTML file just after importing the URI.js file.
+// It should also be added BEFORE adding html-sanitizer.
+
+// Place the URI implementation into the medialize namespace:
+if (typeof self.medialize === "undefined") {
+    self.medialize = {};
+}
+self.medialize.URI = self.URI;
+self.medialize.URITemplate = self.URITemplate;
